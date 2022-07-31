@@ -17,7 +17,7 @@ public class DataConfiguration {
 	public DataSource dataSource(){
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://185.201.11.170:3306/u979687582_telephone_book?enabledTLSProtocols=TLSv1.2&useTimezone=true&serverTimezone=UTC");
+		dataSource.setUrl("jdbc:mysql://82.180.174.205:3306/u979687582_telephone_book?enabledTLSProtocols=TLSv1.2&useTimezone=true&serverTimezone=UTC");
 		dataSource.setUsername("u979687582_t_book_user");
 		dataSource.setPassword("6$Pap]?9vY8L");
 		return dataSource;
