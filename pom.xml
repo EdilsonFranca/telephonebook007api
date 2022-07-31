@@ -14,11 +14,9 @@
 	<name>telephone-book</name>
 	<description>telephone-book</description>
 	<properties>
+	         <java.version>11</java.version>
 		 <maven.compiler.source>1.8</maven.compiler.source>
 		 <maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
-	<properties>
-		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
