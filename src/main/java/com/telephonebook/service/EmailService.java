@@ -40,8 +40,8 @@ public class EmailService {
             contacts_filter.stream().forEach(e -> {
                 EmailModel emailModel = new EmailModel();
                 emailModel.setOwnerRef("Sistema de Contatos");
-                emailModel.setEmailTo("******************");
-                emailModel.setEmailFrom("******************");
+                emailModel.setEmailTo("***************************");
+                emailModel.setEmailFrom("**************************");
                 emailModel.setSubject("Notificão de aviso de Aniversário");
                 emailModel.setText("\uD83E\uDD73\uD83E\uDD73\uD83E\uDD73\uD83E\uDD73\uD83E\uDD73 O Contato "+ e.getName()+" está fazendo "+ (LocalDate.now().getYear() - e.getBirth_date().getYear())+" Anos Hoje \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89 ," +" Não esqueça de desejar os Parabéns!  ;)");
                 sendEmail(emailModel);
