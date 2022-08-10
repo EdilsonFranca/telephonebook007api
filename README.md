@@ -4,12 +4,12 @@
 
 Padrão Rest
 
-Get /contact      lista todos os contatos
-Get /contact/id   busca por id
+Get /contact      lista todos os contatos<br>
+Get /contact/id   busca por id<br>
 
-Post /contact        cria novo contato
-Put /contact/id      altera pelo id
-Delete /contact/id   remove pelo id
+Post /contact        cria novo contato<br>
+Put /contact/id      altera pelo id<br>
+Delete /contact/id   remove pelo id<br>
 
 
 
