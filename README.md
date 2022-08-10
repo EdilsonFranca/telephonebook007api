@@ -13,5 +13,6 @@ Post /contact        cria novo contato<br>
 Put /contact/id      altera pelo id<br>
 Delete /contact/id   remove pelo id<br>
 
-
+<h5>funcionalidades</h5><br>
+Scheduled  que verifica uma ves por dia se algum contato esta fazendo aniversario no dia atual
 
