@@ -29,7 +29,7 @@ public class EmailService {
     @Autowired
     private ContactRepository contactRepository;
 
-    @Scheduled(cron = "0 25 18 * * *")
+    @Scheduled(cron = "0 00 18 * * *")
     public void checkDateOfBirth() {
         List<Contact> contacts_filter = contactRepository.findAll()
                     .stream()
@@ -40,8 +40,8 @@ public class EmailService {
             contacts_filter.stream().forEach(e -> {
                 EmailModel emailModel = new EmailModel();
                 emailModel.setOwnerRef("Sistema de Contatos");
-                emailModel.setEmailTo("******************************");
-                emailModel.setEmailFrom("**************************");
+                emailModel.setEmailTo("edilson18martins@gmail.com");
+                emailModel.setEmailFrom("appagendadecontatos@gmail.com");
                 emailModel.setSubject("Notificão de aviso de Aniversário");
                 emailModel.setText("\uD83E\uDD73\uD83E\uDD73\uD83E\uDD73\uD83E\uDD73\uD83E\uDD73 O Contato "+ e.getName()+" está fazendo "+ (LocalDate.now().getYear() - e.getBirth_date().getYear())+" Anos Hoje \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89 ," +" Não esqueça de desejar os Parabéns!  ;)");
                 sendEmail(emailModel);
